@@ -1,0 +1,17 @@
+/* Original logo artwork, presented without cards or recolouring. */
+.brand-strip{background:#fff}
+.brand-strip-inner{display:grid;grid-template-columns:1fr 1.8fr;gap:65px;align-items:center;padding-block:54px}
+.brand-intro h2{font-size:32px;line-height:1.25;letter-spacing:-.8px;margin-bottom:15px}
+.brand-strip .brand-intro p{font-size:15px;line-height:1.8;font-weight:400;color:var(--muted)}
+.brand-strip .eyebrow{font-size:12px;letter-spacing:1.7px;margin-bottom:15px}
+.brand-showcase{min-width:0}
+.brand-logo-row{display:flex;align-items:center;justify-content:space-around;gap:45px;min-height:155px}
+.brand-logo{display:flex;align-items:center;justify-content:center;flex:1;min-width:0;height:145px;overflow:hidden}
+.brand-logo img{display:block;width:100%;height:auto;object-fit:contain;flex-shrink:0}
+.brand-tplink img{width:120%;max-width:350px}
+.brand-ruijie img{max-width:240px}
+.brand-capabilities{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid #d4dfe7;padding-top:20px;margin-top:18px}
+.brand-capabilities span{font-size:10px;letter-spacing:1.2px;color:#567082;font-weight:600}
+@media(max-width:1050px){.brand-strip-inner{grid-template-columns:1fr 1.5fr;gap:35px}.brand-intro h2{font-size:28px}.brand-logo-row{gap:25px}.brand-capabilities span{font-size:9px}}
+@media(max-width:700px){.brand-strip-inner{grid-template-columns:1fr;gap:20px;padding-block:38px}.brand-intro h2{font-size:30px}.brand-intro h2 br{display:none}.brand-strip .brand-intro p br{display:none}.brand-logo-row{gap:30px;min-height:130px}.brand-logo{height:130px}.brand-capabilities{margin-top:5px;gap:10px}.brand-capabilities span{font-size:9px;letter-spacing:.5px}.brand-ruijie img{max-width:200px}}
+@media(max-width:380px){.brand-logo-row{gap:22px;min-height:100px}.brand-logo{height:100px}.brand-capabilities span{font-size:8px;letter-spacing:0}}

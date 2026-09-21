@@ -1,0 +1,57 @@
+/* Shared readable type scale, applied after the original layout styles. */
+:root{--muted:#4b6172;--blue:#0875b4;font-size:16px}
+body{font-size:16px;line-height:1.6}
+h1{font-size:clamp(42px,4.1vw,60px);line-height:1.17}
+h2,.section-heading h2{font-size:36px;line-height:1.25}
+h3,.service-body h3{font-size:21px;line-height:1.4}
+.topbar{font-size:13px}.top-inner{height:40px}.top-hours{color:#d0e1ec}
+.brand small{font-size:10px}.brand strong{font-size:30px}
+.header-inner{height:98px;gap:20px}nav{font-size:15px;gap:20px}nav a{padding:35px 0}
+.button,.header-actions .whatsapp,.text-link{font-size:15px;line-height:1.5}
+.button{min-height:48px;padding:14px 20px}.header-actions{gap:10px}.header-actions .whatsapp{padding:12px 15px}
+.whatsapp-logo{display:inline-block;width:23px;height:23px;flex-shrink:0;object-fit:contain;vertical-align:middle}
+.button .whatsapp-logo{filter:brightness(0) invert(1)}
+.eyebrow,.brand-strip .eyebrow,.contact-section .eyebrow{font-size:12px;line-height:1.6;letter-spacing:1.3px}
+.hero-content{padding-top:62px;padding-bottom:54px}.hero p{font-size:18px;line-height:1.8}
+.hero-note{font-size:13px;flex-wrap:wrap;color:#e1edf4}.hero-note svg{width:19px;height:19px}
+.hero-caption{font-size:12px}.hero-caption small{font-size:14px}
+.benefits strong{font-size:16px}.benefits small{font-size:14px}.benefits-inner>div{padding-left:20px}
+.section-heading p,.process>div>p,.brand-strip p{font-size:16px}
+.service-body{padding:28px 20px 23px}.service-body>p{font-size:16px;line-height:1.8;min-height:0}
+.service-body li{font-size:14px;line-height:1.65;align-items:flex-start}.service-body li svg{width:16px;height:21px}
+.service-body .text-link{font-size:15px}.art-label{font-size:11px}
+.service-card{display:flex;flex-direction:column}.service-art{flex-shrink:0}.service-body{flex:1;display:flex;flex-direction:column}.service-body>.text-link{margin-top:auto}
+.shop-toolbar{flex-wrap:wrap}.filter{font-size:14px;padding:11px 14px}.search input{font-size:16px;width:180px}
+.product-brand{font-size:12px;color:#526778;letter-spacing:.7px}.product-badge{font-size:12px;color:#354f62}
+.product-body h3{font-size:19px;min-height:0}.product-body>p{font-size:15px;color:var(--muted);min-height:0;line-height:1.75}
+.product-body{display:flex;flex-direction:column;flex:1}.product-card{display:flex;flex-direction:column}.product-image{flex-shrink:0}
+.product-bottom{font-size:16px;margin-top:auto;padding-top:18px}.product-body>p{margin-bottom:20px}.product-bottom small{font-size:12px;color:#526778;line-height:1.6}
+.add-product{width:40px;height:40px;flex-shrink:0}.view-product{font-size:12px}
+.catalogue-note{font-size:14px!important;color:#536779;line-height:1.8}
+.solution-card h3{font-size:24px}.solution-card p,.solution-card li{font-size:16px}.solution-card li{align-items:flex-start}.solution-card li svg{height:24px;flex-shrink:0}
+.installation-copy>p,.installation-points p{font-size:16px}.installation-points h3{font-size:18px}.installation-points>div>span{font-size:14px}
+.about h2{font-size:39px}.about-copy>p{font-size:17px;color:#d0e0eb}.about-grid h3{font-size:18px}.about-grid p{font-size:15px;color:#c9dce9;max-width:none}
+.process h2{font-size:32px}.steps h3{font-size:18px}.steps p{font-size:16px}.steps>div>span{font-size:16px}
+.faq-section>div>p,.faq-list details p{font-size:16px}.faq-list summary{font-size:18px}
+.contact-section h2{font-size:32px}.contact-section p,.contact-phone{font-size:16px}.contact-section{padding:36px 30px}
+.footer-brand{font-size:30px}.footer-brand span{font-size:12px}.footer-main p,.footer-main strong,.footer-main>div:not(:first-child)>a{font-size:15px}.footer-main>div:not(:first-child)>a{display:block}
+.footer-main{grid-template-columns:1fr .85fr 1.15fr;gap:30px}.footer-bottom{font-size:13px;color:#536779;flex-wrap:wrap}
+dialog{width:min(610px,calc(100% - 32px))}dialog h2{font-size:32px}dialog p,.detail-features,form label{font-size:16px}
+form input,form textarea,form select{font-size:16px;line-height:1.5}form small{font-size:13px}
+.basket-item h3{font-size:17px}.basket-item>div>span,.quantity{font-size:15px}.quantity button{width:36px;height:36px}
+.empty-search p,#toast{font-size:16px}.basket-count{font-size:12px;min-width:19px}.icon-button{min-width:42px;min-height:42px}
+@media(max-width:1200px){nav{display:none;position:absolute;top:98px;left:0;right:0;padding:15px 28px;background:white;box-shadow:0 12px 18px #082d4c10;flex-direction:column;align-items:stretch;gap:0}nav.is-open{display:flex}nav a{padding:13px}nav .active:after{display:none}.menu-toggle{display:flex}.service-grid,.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-section{flex-wrap:wrap}.benefits-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.benefits-inner>div:nth-child(3){padding-left:0;border:0}}
+@media(max-width:850px){.header-inner{height:88px}nav{top:88px}.brand strong{font-size:28px}.brand small{font-size:9px}.hero h1{font-size:46px}.about h2{font-size:36px}.footer-main{grid-template-columns:1fr 1fr}.footer-main>div:last-child{grid-column:1/-1}.process,.faq-section{grid-template-columns:1fr}.steps{gap:24px}.benefits strong{font-size:15px}.benefits small{font-size:13px}}
+@media(max-width:540px){
+ html{scroll-padding-top:100px}.top-inner{height:auto;min-height:44px;flex-wrap:wrap;gap:3px 12px;padding-block:6px}.top-inner,.top-inner>a{font-size:12px}.top-inner>span{font-size:11px}
+ .header-inner{height:82px;gap:6px}nav{top:82px}.brand strong{font-size:25px}.brand small{font-size:8px}.brand-mark{width:40px;margin-right:-7px}.brand{gap:5px}.header-actions{gap:0}.header-actions .whatsapp{display:none}
+ .hero h1{font-size:39px}.hero .eyebrow{font-size:11px;letter-spacing:.9px}.hero p{font-size:17px}.hero-content{padding-block:40px}.hero-note{font-size:12px;gap:7px}.hero-buttons{display:grid;grid-template-columns:1fr}.hero-buttons .button{font-size:16px;padding:14px}.hero-buttons svg{width:19px}
+ h2,.section-heading h2,.process h2,.installation-copy h2,.contact-section h2{font-size:30px}.eyebrow,.brand-strip .eyebrow,.contact-section .eyebrow{font-size:11px}
+ .benefits-inner{gap:20px 10px}.benefits-inner>div{padding-left:10px;gap:9px}.benefits strong{font-size:14px}.benefits small{font-size:12px}.benefits svg{width:23px;height:23px}
+ .service-grid,.product-grid{grid-template-columns:1fr}.service-body h3{font-size:23px}.service-body>p,.service-body li{font-size:16px}.service-body li svg{width:16px;height:24px}.service-body .text-link{font-size:16px}.art-label{font-size:11px}
+ .filter{font-size:14px;padding:10px 12px}.filters{gap:6px}.search input{width:100%}.product-image{height:230px}.product-body{padding:22px}.product-body h3{font-size:22px;min-height:0}.product-body>p{font-size:16px;min-height:0}.product-brand,.product-badge{font-size:12px}.product-bottom{font-size:17px;margin-top:0}.product-bottom small{font-size:13px;max-width:none}.add-product{width:44px;height:44px}.catalogue-note{font-size:14px!important}
+ .about-grid{grid-template-columns:1fr;gap:26px}.about-grid h3{font-size:20px}.about-grid p{font-size:16px}.about-copy>p{font-size:17px}.steps h3{font-size:19px}.steps p{font-size:16px}.solution-card h3{font-size:24px}
+ .faq-list summary{font-size:17px}.faq-list details p{font-size:16px}.contact-section .button{font-size:15px}.contact-section>div:last-child{flex-shrink:1;width:100%}.contact-section .whatsapp{width:100%;gap:9px;padding-inline:10px}
+ .footer-main{grid-template-columns:1fr}.footer-main>div:last-child{grid-column:auto}.footer-bottom{font-size:12px}.footer-bottom>span:nth-child(2){display:block;margin-left:0}dialog{padding:32px 20px}dialog h2{font-size:28px}.basket-item h3{font-size:16px}.basket-art{width:72px}#request-quote{font-size:14px;padding:13px 10px;gap:7px}
+}
+@media(max-width:360px){.brand strong{font-size:23px}.brand small{font-size:7px}.header-inner{gap:3px}.header-actions .icon-button{min-width:38px;padding:7px}.hero h1{font-size:35px}}

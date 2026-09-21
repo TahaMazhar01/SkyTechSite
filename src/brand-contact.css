@@ -1,0 +1,21 @@
+.floating-whatsapp{position:fixed;right:28px;bottom:max(28px,env(safe-area-inset-bottom));z-index:30;width:64px;height:64px;display:grid;place-items:center;border-radius:50%;background:#25d366;border:2px solid #fff;box-shadow:0 5px 22px #064b2b40;transition:transform .2s,background .2s}
+.floating-whatsapp .whatsapp-logo{width:35px;height:35px;filter:brightness(0) invert(1)}
+.floating-whatsapp:hover{background:#1cba58;transform:translateY(-3px)}
+.floating-whatsapp:focus-visible{outline:3px solid #075e54;outline-offset:4px}
+.dialog-open .floating-whatsapp{visibility:hidden}
+.brand-strip{background:#fff;border-block:1px solid #d9e7ee}
+.brand-strip-inner{display:grid;grid-template-columns:1fr;gap:27px;padding-block:40px}
+.brand-strip .eyebrow{font-size:15px;letter-spacing:1.7px;margin-bottom:9px;color:#075886}
+.brand-strip p{font-size:19px;font-weight:500;color:#344f64}
+.brand-names{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;width:100%}
+.brand-tile{min-height:124px;display:flex;flex-wrap:wrap;justify-content:center;align-content:center;align-items:baseline;padding:22px 16px;border-radius:8px;background:#fff;border:1px solid #dce7ec;box-shadow:0 4px 14px #14374706;line-height:1.15}
+.brand-tile small{flex-basis:100%;text-align:center;font-family:'DM Sans',sans-serif;font-style:normal;letter-spacing:3px;font-size:11px;margin-top:10px;font-weight:600}
+.brand-names .ruijie{color:#e6002d;font-size:43px;font-weight:800;letter-spacing:-1.8px;border-bottom:3px solid #e6002d}
+.brand-names .ruijie small{color:#a50e2c;letter-spacing:4px}
+.brand-names .tplink{color:#009fba;font-size:43px;letter-spacing:-1.8px;border-bottom:3px solid #00a8bd}
+.brand-names .omada{flex-basis:100%;font-size:15px;font-weight:750;letter-spacing:5px;color:#005b62;margin-top:9px}
+.brand-names .cat6{color:#123b66;font-size:42px;border-bottom:3px solid #1879b5}.brand-names .cat6>span{color:#1879b5}.brand-names .cat6 small{font-size:10px;letter-spacing:1.5px;color:#355875}
+.brand-names .fiber{color:#075e70;font-size:34px;letter-spacing:-1px;border-bottom:3px solid #087e90}.brand-names .fiber>span{color:#087e90}.brand-names .fiber small{color:#376575;font-size:11px;letter-spacing:2px}
+.footer-bottom{padding-right:85px;padding-bottom:30px}
+@media(max-width:850px){.brand-names{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.brand-strip-inner{gap:22px}.floating-whatsapp{right:20px;bottom:max(20px,env(safe-area-inset-bottom))}}
+@media(max-width:540px){.brand-strip-inner{padding-block:30px}.brand-strip .eyebrow{font-size:13px}.brand-strip p{font-size:17px}.brand-names{gap:12px}.brand-tile{min-height:111px;padding:19px 8px}.brand-names .ruijie,.brand-names .tplink{font-size:33px}.brand-names .cat6{font-size:34px}.brand-names .fiber{font-size:26px}.brand-names .cat6 small{font-size:8px;letter-spacing:.8px}.brand-names .omada{font-size:12px;letter-spacing:3px}.brand-tile small{font-size:9px}.brand-names .fiber small{font-size:9px;letter-spacing:1px}.floating-whatsapp{width:58px;height:58px;right:17px;bottom:max(18px,env(safe-area-inset-bottom))}.floating-whatsapp .whatsapp-logo{width:32px;height:32px}.footer-bottom{padding-right:70px;padding-bottom:35px}#toast{bottom:90px;max-width:calc(100vw - 32px);white-space:normal;text-align:center}}

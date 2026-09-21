@@ -26,3 +26,5 @@ Confirm business contact details and service area. Replace illustrative product 
 The logo is supplied by the client. Equipment and service photography is downloaded locally from Pexels and Unsplash under their free-use stock licences (not public-domain or open-source licences). Full source links and credits are in `public/image-credits.html`, also linked in the website footer. Photographs represent equipment categories, not confirmed SKUs or completed client projects. Fonts: DM Sans and Manrope, delivered by Google Fonts with system fallbacks.
 
 Catalogue content lives in `src/catalogue.js`: 12 equipment categories, selection guidance, image mappings, and six FAQs. The homepage also includes home/business/security solutions and installation guidance. Keep exact inventory and pricing unconfirmed until supplied by the business.
+
+The shared larger typography and contrast overrides are in `src/readability.css`. WhatsApp brand glyph comes from Bootstrap Icons (MIT); its notice is saved beside the SVG in `public/assets/whatsapp-icon-LICENSE.txt`.
