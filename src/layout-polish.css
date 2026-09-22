@@ -1,0 +1,47 @@
+/* Clear section boundaries and uncropped, proportionate brand artwork. */
+.section{padding-block:88px}
+.section-heading{margin-bottom:38px}
+.brand-strip{border-block:1px solid #d8e4ec;background:#fff;margin-block:22px}
+.brand-strip-inner{padding-block:65px;gap:40px}
+.brand-logo-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;min-height:150px}
+.brand-logo{width:100%;height:145px;min-width:0;overflow:visible;margin:0;flex:none;padding:0}
+.brand-logo img{display:block;width:100%;max-width:100%;height:auto;max-height:130px;object-fit:contain;flex-shrink:1}
+.brand-ipcom img,.brand-ruijie img{width:100%;max-width:220px}
+.brand-capabilities{margin-top:28px;padding-top:24px}
+.solutions-section{margin-block:24px;background:#f0f6fa;border-block:1px solid #d6e4ee}
+.installation-section{padding-block:100px}
+.about{margin-block:24px}.about-inner{padding-block:78px}
+.process{padding-block:92px}
+.faq-section{padding-top:78px;padding-bottom:88px;border-top:1px solid #cddce7}
+.contact-section{margin-top:20px;margin-bottom:92px;padding:44px 38px}
+.site-footer{background:#08283f;color:#edf5fa;border-top:5px solid #118bc6;position:relative}
+.footer-banner{padding-block:43px;border-bottom:1px solid #ffffff25;display:flex;justify-content:space-between;align-items:center;gap:32px}
+.footer-banner .eyebrow{color:#77cff3;font-size:11px;letter-spacing:1.5px;margin-bottom:12px}
+.footer-banner h2{color:white;font-size:30px;letter-spacing:-.6px}
+.footer-call{display:flex;align-items:center;gap:17px;flex-shrink:0;color:#b8d1e1;font-size:13px}
+.footer-call>svg:first-child{color:#6cd0f6;width:28px;height:28px}
+.footer-call strong{display:block;font-size:23px;color:white;margin-top:5px;font-weight:600}
+.footer-call>svg:last-child{color:#78ccef}
+.site-footer .footer-main{display:grid;grid-template-columns:1.25fr .65fr .95fr 1.15fr;gap:42px;padding-block:55px}
+.site-footer .footer-main>div{min-width:0;grid-column:auto}
+.site-footer .footer-brand{font-size:33px;color:white;line-height:1.2}
+.site-footer .footer-brand .footer-wordmark{font-size:33px;letter-spacing:-.7px;font-weight:800;color:#6fc9f0;margin:0}
+.footer-wordmark b{color:#fff}
+.site-footer .footer-brand>span:last-child{font-size:12px;line-height:1.6;color:#bed5e3;margin-top:9px}
+.site-footer .footer-main p{font-size:14px;line-height:1.85;color:#bdd0dd;margin-top:20px}
+.footer-identity>p{max-width:300px}
+.footer-location{display:flex;align-items:center;gap:7px;color:#8ec9e5;font-size:12px;margin-top:21px}
+.footer-location svg{width:16px;height:16px;flex-shrink:0}
+.site-footer .footer-main strong{font-size:15px;display:block;color:white;margin-bottom:20px;font-weight:700}
+.site-footer .footer-main>div:not(:first-child)>a{font-size:14px;color:#c6d9e5;margin-top:13px;line-height:1.7;display:block;overflow-wrap:anywhere}
+.site-footer a:hover{color:#76d2fa}
+.footer-consult{display:flex;align-items:center;gap:7px;padding:0;border:0;background:none;color:#83d5f8;font-size:13px;text-align:left;line-height:1.7;margin-top:19px}
+.footer-consult svg{width:15px;height:15px}
+.site-footer .footer-contact .footer-email{font-size:13px;color:#83d5f8}
+.site-footer .footer-contact p{margin-top:22px;font-size:13px}
+.site-footer .footer-bottom{border-top:1px solid #ffffff25;color:#a9c3d5;font-size:12px;padding-top:23px;padding-bottom:30px;padding-right:95px}
+.site-footer .footer-bottom>span:nth-child(2){display:block}.site-footer .footer-bottom a{color:#c3e3f3}
+.site-footer .footer-bottom>a{width:32px;height:32px;border-color:#ffffff40;background:#ffffff08}
+@media(max-width:1050px){.site-footer .footer-main{grid-template-columns:1.2fr 1fr;gap:40px 60px}.footer-banner{align-items:flex-start}.footer-banner h2{font-size:27px}.footer-call strong{font-size:21px}}
+@media(max-width:700px){.section{padding-block:64px}.brand-strip-inner{padding-block:48px}.brand-logo-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px}.brand-logo{height:125px}.brand-ipcom{grid-column:1/-1;width:min(240px,100%);justify-self:center;height:105px}.brand-capabilities{margin-top:24px}.about-inner{padding-block:60px}.installation-section,.process{padding-block:72px}.footer-banner{flex-direction:column;gap:26px}.footer-banner h2{font-size:28px}.site-footer .footer-main{gap:34px}.contact-section{margin-bottom:66px}}
+@media(max-width:540px){.section{padding-block:58px}.section-heading{margin-bottom:30px}.brand-strip{margin-block:18px}.brand-strip-inner{padding-block:40px;gap:26px}.brand-logo-row{gap:14px 24px}.brand-logo{height:115px}.brand-logo img{width:100%;max-width:100%;max-height:110px}.brand-ipcom{height:100px;width:min(220px,100%)}.solutions-section,.about{margin-block:20px}.about-inner{padding-block:58px}.installation-section,.process,.faq-section{padding-block:64px}.contact-section{margin-top:12px;margin-bottom:68px;padding:32px 23px}.footer-banner{padding-block:34px}.site-footer .footer-main{grid-template-columns:1fr 1fr;gap:34px 20px;padding-block:38px}.site-footer .footer-identity,.site-footer .footer-contact{grid-column:1/-1!important}.footer-identity>p{max-width:none}.site-footer .footer-main strong{font-size:15px;margin-bottom:14px}.site-footer .footer-main>div:not(:first-child)>a{font-size:13px}.site-footer .footer-contact .footer-email{font-size:14px}.site-footer .footer-bottom{display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding-right:76px;padding-bottom:36px;font-size:11px}.site-footer .footer-bottom>span:nth-child(2){margin:0;line-height:1.9}.site-footer .footer-bottom>a{margin:0}.footer-banner h2{font-size:27px}.footer-call{gap:12px}.footer-call strong{font-size:22px}}

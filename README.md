@@ -1,5 +1,9 @@
 # SKY TECH storefront
 
+The homepage hero automatically cycles through five image-and-copy slides every 5 seconds, without navigation controls or hover-to-pause behavior. Rotation suspends while the tab is hidden and resumes when it becomes visible. Reduced-motion preferences disable transition effects. Slide content lives in `src/hero.js`. Floating phone and WhatsApp links use the business contact number. The IP-COM artwork is the exact client-supplied logo.
+
+Rollup uses the official WebAssembly package override for compatibility with Windows application-control policies that block its native addon.
+
 A responsive local storefront and installation-service website, built with Vite, vanilla JavaScript, and Lucide icons.
 
 ## Run locally

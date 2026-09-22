@@ -1,0 +1,24 @@
+.hero-carousel{height:650px;min-height:650px;position:relative;background:#082d4c}
+.hero-slides,.hero-slide{position:absolute;inset:0}
+.hero-slide{opacity:0;visibility:hidden;transform:translateX(24px);transition:opacity .75s ease,transform .75s ease,visibility .75s;pointer-events:none}
+.hero-slide.is-active{opacity:1;visibility:visible;transform:translateX(0);pointer-events:auto}
+.hero-carousel .hero-image{object-position:center;object-fit:cover}
+.hero-carousel .hero-shade{background:linear-gradient(90deg,rgba(3,25,43,.97),rgba(3,25,43,.88) 34%,rgba(3,25,43,.44) 70%,rgba(3,25,43,.2)),linear-gradient(0deg,rgba(3,25,43,.8),transparent 35%)}
+.hero-carousel .hero-content{padding-top:52px;padding-bottom:100px}
+.hero-carousel .slide-heading{font-size:clamp(40px,3.65vw,54px);line-height:1.2;letter-spacing:-1.6px;color:white;max-width:900px;font-weight:750}
+.hero-carousel .slide-heading>span{color:#83d0f8}
+.hero-carousel .hero-content>p{max-width:650px;font-size:18px;line-height:1.8;margin-top:20px;color:#e4edf4}
+.hero-carousel .eyebrow{text-transform:uppercase}.hero-carousel .hero-buttons{margin-top:24px}.hero-carousel .hero-note{margin-top:23px}
+.hero-controls{position:absolute;left:0;right:0;bottom:23px;display:flex;justify-content:space-between;align-items:center;gap:20px;z-index:2;border-top:1px solid #ffffff35;padding-top:17px}
+.slide-selectors{display:flex;gap:20px;flex-wrap:wrap}.slide-selectors button{border:0;background:none;color:#c0d0dc;padding:10px 0;display:flex;align-items:center;gap:7px;font-size:11px;min-height:42px}
+.slide-selectors button[aria-current=true]{color:white}.slide-dot{width:7px;height:7px;border-radius:50%;background:#ffffff50;transition:background .2s}.slide-selectors button[aria-current=true] .slide-dot{background:#78cfff;box-shadow:0 0 0 4px #79cfff22}
+.slide-navigation{display:flex;align-items:center;gap:7px;color:#fff;flex-shrink:0}.slide-navigation button{display:grid;place-items:center;width:42px;height:42px;border:1px solid #ffffff60;background:#ffffff08;border-radius:50%;color:white;font-size:18px}.slide-navigation button:hover{background:#ffffff25}.slide-counter{font-size:12px;letter-spacing:1px;margin-right:10px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.floating-call{position:fixed;right:28px;bottom:calc(max(28px,env(safe-area-inset-bottom)) + 77px);width:64px;height:64px;border:2px solid #fff;border-radius:50%;background:#0875b4;color:#fff;display:grid;place-items:center;z-index:30;box-shadow:0 5px 22px #063b6640;transition:transform .2s,background .2s}
+.floating-call svg{width:29px;height:29px;stroke-width:2}.floating-call:hover{background:#075c8d;transform:translateY(-3px)}.dialog-open .floating-call{visibility:hidden}
+.brand-ipcom img{max-width:230px}.brand-logo-row{gap:28px}.brand-strip-inner{grid-template-columns:1fr 2.1fr;gap:45px}
+@media(max-width:1050px){.slide-selector-name{display:none}.slide-selectors{gap:16px}.slide-selectors button{width:22px;justify-content:center}.brand-strip-inner{grid-template-columns:1fr}.brand-logo-row{gap:30px}.brand-logo{height:140px}}
+@media(max-width:850px){.floating-call{right:20px;bottom:calc(max(20px,env(safe-area-inset-bottom)) + 77px)}.hero-carousel .slide-heading{font-size:43px}.hero-carousel{height:680px;min-height:680px}}
+@media(max-width:540px){.hero-carousel{height:790px;min-height:790px}.hero-carousel .hero-content{padding-top:36px;padding-bottom:115px}.hero-carousel .slide-heading{font-size:36px;line-height:1.22;letter-spacing:-1px}.hero-carousel .hero-content>p{font-size:17px;line-height:1.75;margin-top:19px}.hero-carousel .eyebrow{font-size:10px;min-height:32px;margin-bottom:15px;max-width:280px}.hero-carousel .hero-buttons{display:grid;grid-template-columns:1fr;gap:10px;margin-top:23px}.hero-carousel .hero-buttons .button{font-size:15px;min-height:49px}.hero-carousel .hero-note{font-size:12px;margin-top:20px}.hero-controls{gap:10px;bottom:23px;flex-wrap:wrap;padding-top:14px}.slide-selectors{gap:6px}.slide-navigation{gap:5px}.slide-navigation button{width:36px;height:36px}.slide-counter{font-size:10px;margin-right:4px}.hero-carousel .hero-shade{background:linear-gradient(90deg,#03192bef,#03192ba8),linear-gradient(0deg,#03192b,transparent)}.brand-logo-row{flex-wrap:wrap;gap:10px 25px}.brand-logo{flex:0 0 calc(50% - 13px);height:110px}.brand-ipcom{margin-inline:auto}.brand-ipcom img{max-width:160px}.floating-call{width:58px;height:58px;right:17px;bottom:calc(max(18px,env(safe-area-inset-bottom)) + 70px)}#toast{bottom:158px}}
+@media(max-width:360px){.hero-carousel{height:840px;min-height:840px}.hero-carousel .slide-heading{font-size:33px}.hero-controls{gap:6px}.slide-selectors{gap:3px}.slide-selectors button{width:18px}.slide-counter{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-slide{transition:none;transform:none}.floating-call{transition:none}}
