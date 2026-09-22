@@ -1,6 +1,6 @@
 # SKY TECH storefront
 
-The homepage hero automatically cycles through five image-and-copy slides every 5 seconds, without navigation controls or hover-to-pause behavior. Rotation suspends while the tab is hidden and resumes when it becomes visible. Reduced-motion preferences disable transition effects. Slide content lives in `src/hero.js`. Floating phone and WhatsApp links use the business contact number. The IP-COM artwork is the exact client-supplied logo.
+The homepage hero automatically cycles through five image-and-copy slides every 3 seconds, without navigation controls or hover-to-pause behavior. Rotation suspends while the tab is hidden and resumes when it becomes visible. Reduced-motion preferences disable transition effects. Slide content lives in `src/hero.js`. Floating phone and WhatsApp links use the business contact number. The IP-COM wordmark comes from the official website and replaces the cropped client reference.
 
 Rollup uses the official WebAssembly package override for compatibility with Windows application-control policies that block its native addon.
 
@@ -32,3 +32,5 @@ The logo is supplied by the client. Equipment and service photography is downloa
 Catalogue content lives in `src/catalogue.js`: 12 equipment categories, selection guidance, image mappings, and six FAQs. The homepage also includes home/business/security solutions and installation guidance. Keep exact inventory and pricing unconfirmed until supplied by the business.
 
 The shared larger typography and contrast overrides are in `src/readability.css`. WhatsApp brand glyph comes from Bootstrap Icons (MIT); its notice is saved beside the SVG in `public/assets/whatsapp-icon-LICENSE.txt`.
+
+September 23 visual update: seven-second automatic hero; separate text and photo columns (stacked on mobile); 25 distinct page photos; official EZVIZ C6N G1 2K equipment entry; client-supplied IP-COM wordmark. Sources and manufacturer image distinctions are documented in public/image-credits.html.

@@ -1,0 +1,29 @@
+/* Keep the photographic subject out of the reading column. */
+.hero-carousel{height:690px;min-height:690px;background:#072b46}
+.hero-carousel .hero-image{left:auto;right:0;top:0;width:48%;height:100%;object-position:center;object-fit:cover}
+.hero-carousel .hero-shade{background:linear-gradient(90deg,#072b46 0%,#072b46 50%,transparent 59%);pointer-events:none}
+.hero-carousel .hero-content{padding-top:65px;padding-bottom:45px}
+.hero-carousel .hero-content>*{max-width:48%}
+.hero-carousel .slide-heading{font-size:clamp(36px,3.25vw,50px);line-height:1.2;letter-spacing:-1.4px}
+.hero-carousel .hero-content>p{max-width:46%;font-size:18px;line-height:1.75}
+.hero-carousel .hero-buttons{display:flex;flex-wrap:wrap;gap:12px}
+.hero-carousel .hero-buttons .button{font-size:15px;padding:15px 18px}
+.hero-carousel .hero-note{display:flex;flex-wrap:wrap;font-size:12px;line-height:1.7}
+.brand-logo.brand-ipcom{padding:18px}
+.brand-logo.brand-ipcom img{width:100%;height:auto;max-width:230px;max-height:none;object-fit:contain}
+.product-image:has(img[src*="ezviz"]),.product-image:has(img[src*="access-point"]),.product-image:has(img[src*="gateway-router"]),.product-image:has(img[src*="mesh-system"]){background:white}
+img.equipment-photo[src*="ezviz"],img.equipment-photo[src*="access-point"],img.equipment-photo[src*="gateway-router"],img.equipment-photo[src*="mesh-system"]{object-fit:contain;padding:28px;background:white}
+@media(max-width:1050px) and (min-width:701px){.hero-carousel{height:750px;min-height:750px}.hero-carousel .slide-heading{font-size:38px}.hero-carousel .hero-content{padding-top:48px}.hero-carousel .hero-content>p{font-size:17px}}
+@media(max-width:700px){
+ .hero-carousel{height:990px;min-height:990px}
+ .hero-carousel .hero-content{padding-top:35px;padding-bottom:30px}
+ .hero-carousel .hero-content>*{max-width:100%}
+ .hero-carousel .hero-content>p{max-width:100%;font-size:17px}
+ .hero-carousel .slide-heading{font-size:36px;letter-spacing:-1px}
+ .hero-carousel .hero-image{top:auto;bottom:0;width:100%;height:330px;object-position:center 45%}
+ .hero-carousel .hero-shade{background:linear-gradient(0deg,transparent 280px,#072b46 330px)}
+ .hero-carousel .hero-buttons{display:flex;flex-wrap:wrap}
+ .hero-carousel .hero-note{font-size:12px}
+ .brand-logo.brand-ipcom{padding:8px}
+}
+@media(max-width:380px){.hero-carousel{height:1060px;min-height:1060px}.hero-carousel .slide-heading{font-size:33px}}

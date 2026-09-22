@@ -20,6 +20,9 @@ export function setupNavigation(products,services,onSearch){
   panel.hidden=false;input.setAttribute('aria-expanded','true');form.querySelector('.search-status').textContent=`${matches.length} suggestions available`;
  }
  input.addEventListener('input',render);input.addEventListener('focus',render);
+ // Keep input focus until the click completes; WebKit otherwise closes the
+ // popup on pointer-down before its non-tabbable suggestion can receive click.
+ list.addEventListener('pointerdown',e=>{if(e.target.closest('[role=option]'))e.preventDefault()});
  input.addEventListener('keydown',e=>{
   const options=[...list.querySelectorAll('[role=option]')];
   if(e.key==='Escape'){e.preventDefault();close();return}
@@ -28,7 +31,7 @@ export function setupNavigation(products,services,onSearch){
    selected=(selected+(e.key==='ArrowDown'?1:-1)+opts.length)%opts.length;
    opts.forEach((o,i)=>o.setAttribute('aria-selected',String(i===selected)));input.setAttribute('aria-activedescendant',opts[selected].id);opts[selected].scrollIntoView({block:'nearest'});
   }
-  if(e.key==='Enter'&&!panel.hidden&&selected>=0&&options[selected]){e.preventDefault();options[selected].click()}
+  if(e.key==='Enter'&&!panel.hidden&&options.length){e.preventDefault();options[selected>=0?selected:0].click()}
  });
  form.addEventListener('submit',e=>{e.preventDefault();close();onSearch(input.value.trim());location.hash='shop'});
  document.addEventListener('click',e=>{if(!form.contains(e.target)||e.target.closest('[role=option]'))close()});
