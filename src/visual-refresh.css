@@ -1,7 +1,11 @@
-/* Keep the photographic subject out of the reading column. */
+/* Full-bleed photographs with individual crops and a soft reading scrim. */
 .hero-carousel{height:690px;min-height:690px;background:#072b46}
-.hero-carousel .hero-image{left:auto;right:0;top:0;width:48%;height:100%;object-position:center;object-fit:cover}
-.hero-carousel .hero-shade{background:linear-gradient(90deg,#072b46 0%,#072b46 50%,transparent 59%);pointer-events:none}
+.hero-carousel .hero-image{left:0;right:auto;top:0;width:100%;max-width:none;height:100%;object-position:center 48%;object-fit:cover}
+.hero-carousel .hero-slide:nth-child(2) .hero-image{width:125%;object-position:center 53%}
+.hero-carousel .hero-slide:nth-child(3) .hero-image{width:150%;object-position:center 48%}
+.hero-carousel .hero-slide:nth-child(4) .hero-image{width:190%;object-position:center 48%}
+.hero-carousel .hero-slide:nth-child(5) .hero-image{width:140%;object-position:center 65%}
+.hero-carousel .hero-shade{background:linear-gradient(90deg,rgba(3,24,42,.95) 0%,rgba(3,24,42,.86) 28%,rgba(3,24,42,.55) 47%,rgba(3,24,42,.1) 72%,rgba(3,24,42,.04)),linear-gradient(0deg,rgba(3,24,42,.25),transparent 45%);pointer-events:none}
 .hero-carousel .hero-content{padding-top:65px;padding-bottom:45px}
 .hero-carousel .hero-content>*{max-width:48%}
 .hero-carousel .slide-heading{font-size:clamp(36px,3.25vw,50px);line-height:1.2;letter-spacing:-1.4px}
@@ -15,15 +19,15 @@
 img.equipment-photo[src*="ezviz"],img.equipment-photo[src*="access-point"],img.equipment-photo[src*="gateway-router"],img.equipment-photo[src*="mesh-system"]{object-fit:contain;padding:28px;background:white}
 @media(max-width:1050px) and (min-width:701px){.hero-carousel{height:750px;min-height:750px}.hero-carousel .slide-heading{font-size:38px}.hero-carousel .hero-content{padding-top:48px}.hero-carousel .hero-content>p{font-size:17px}}
 @media(max-width:700px){
- .hero-carousel{height:990px;min-height:990px}
+ .hero-carousel{height:760px;min-height:760px}
  .hero-carousel .hero-content{padding-top:35px;padding-bottom:30px}
  .hero-carousel .hero-content>*{max-width:100%}
  .hero-carousel .hero-content>p{max-width:100%;font-size:17px}
  .hero-carousel .slide-heading{font-size:36px;letter-spacing:-1px}
- .hero-carousel .hero-image{top:auto;bottom:0;width:100%;height:330px;object-position:center 45%}
- .hero-carousel .hero-shade{background:linear-gradient(0deg,transparent 280px,#072b46 330px)}
+ .hero-carousel .hero-slide .hero-image{top:0;bottom:0;width:100%;height:100%;object-position:60% center}
+ .hero-carousel .hero-shade{background:linear-gradient(90deg,rgba(3,24,42,.9),rgba(3,24,42,.65) 65%,rgba(3,24,42,.3)),linear-gradient(0deg,rgba(3,24,42,.6),transparent 55%)}
  .hero-carousel .hero-buttons{display:flex;flex-wrap:wrap}
  .hero-carousel .hero-note{font-size:12px}
  .brand-logo.brand-ipcom{padding:8px}
 }
-@media(max-width:380px){.hero-carousel{height:1060px;min-height:1060px}.hero-carousel .slide-heading{font-size:33px}}
+@media(max-width:380px){.hero-carousel{height:830px;min-height:830px}.hero-carousel .slide-heading{font-size:33px}}

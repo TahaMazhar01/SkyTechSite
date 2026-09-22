@@ -33,4 +33,4 @@ Catalogue content lives in `src/catalogue.js`: 12 equipment categories, selectio
 
 The shared larger typography and contrast overrides are in `src/readability.css`. WhatsApp brand glyph comes from Bootstrap Icons (MIT); its notice is saved beside the SVG in `public/assets/whatsapp-icon-LICENSE.txt`.
 
-September 23 visual update: seven-second automatic hero; separate text and photo columns (stacked on mobile); 25 distinct page photos; official EZVIZ C6N G1 2K equipment entry; client-supplied IP-COM wordmark. Sources and manufacturer image distinctions are documented in public/image-credits.html.
+September 23 visual update: seven-second automatic hero; full-bleed high-resolution hero photographs with individual subject crops and a soft text gradient; 25 distinct page photos; official EZVIZ C6N G1 2K equipment entry; client-supplied IP-COM wordmark. Sources and manufacturer image distinctions are documented in public/image-credits.html.

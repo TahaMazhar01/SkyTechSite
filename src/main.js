@@ -19,8 +19,8 @@ const productArt = (type) => { const [file, alt] = photoMap[type] || photoMap.ra
 const services = [
  {id:'wifi',icon:'wifi',title:'Wi-Fi & networking',copy:'Better coverage. Fewer interruptions. Stay connected in every corner.',features:['Wi-Fi & mesh installation','Router & access point setup','Network configuration'],tag:'A stronger connection'},
  {id:'camera',icon:'cctv',title:'CCTV & security',copy:'Keep an eye on what matters, wherever your day takes you.',features:['Indoor & outdoor cameras','NVR setup & remote viewing','Maintenance & support'],tag:'Peace of mind, installed'},
- {id:'router',icon:'house',title:'Smart home solutions',copy:'Make everyday living simpler with a home that works together.',features:['Smart device installation','Connected home setup','App configuration'],tag:'A more connected home'},
- {id:'switch',icon:'network',title:'Cabling & IT support',copy:'A reliable foundation, from the first cable to the final connection.',features:['CAT6 & fiber optic cabling','Rack dressing & organization','Troubleshooting & IT support'],tag:'Built right. From the start.'}
+ {id:'switch',icon:'network',title:'Cabling & IT support',copy:'A reliable foundation, from the first cable to the final connection.',features:['CAT6 & fiber optic cabling','Rack dressing & organization','Troubleshooting & IT support'],tag:'Built right. From the start.'},
+ {id:'router',icon:'house',title:'Smart home solutions',copy:'Make everyday living simpler with a home that works together.',features:['Smart device installation','Connected home setup','App configuration'],tag:'A more connected home'}
 ];
 let basket; try {basket = JSON.parse(localStorage.getItem('sky-basket') || '[]').filter(x => products.some(p => p.id === x.id) && Number.isInteger(x.qty) && x.qty > 0)} catch {basket=[]}
 document.querySelector('#app').innerHTML = `
