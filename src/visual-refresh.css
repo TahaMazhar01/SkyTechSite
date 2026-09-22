@@ -1,4 +1,6 @@
 /* Full-bleed photographs with individual crops and a soft reading scrim. */
+.product-card,.solution-card{border:2px solid #91b6d2;box-shadow:0 3px 12px #123e6410}
+.product-card:hover,.product-card:focus-within,.solution-card:hover,.solution-card:focus-within{border-color:#287bb5;box-shadow:0 4px 16px #123e641c}
 .hero-carousel{height:690px;min-height:690px;background:#072b46}
 .hero-carousel .hero-image{left:0;right:auto;top:0;width:100%;max-width:none;height:100%;object-position:center 48%;object-fit:cover}
 .hero-carousel .hero-slide:nth-child(2) .hero-image{width:125%;object-position:center 53%}
