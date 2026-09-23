@@ -1,11 +1,11 @@
 /* Full-bleed photographs with individual crops and a soft reading scrim. */
 /* Scale the entire logo crop together; narrowing only its frame cuts the globe. */
-.brand-mark{flex:0 0 54px;width:54px;height:57px;transform:none;margin:0}
+.header-inner .brand-mark{flex:0 0 54px;width:54px;height:auto;aspect-ratio:680/550;transform:none;margin:0;overflow:hidden;position:relative}
+.header-inner .brand-mark img{position:absolute;width:223.2353%;max-width:none;height:auto;left:-64.7059%;top:-18.1818%;display:block}
 @media(max-width:700px){
  .header-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;min-width:0;height:auto}
  .header-inner .brand{min-width:0;max-width:100%;gap:6px;flex-shrink:1}
- .brand-mark{flex-basis:44px;width:44px;height:47px;margin:0;transform:none}
- .brand-mark img{width:99px;left:-28px;top:-5px}
+ .header-inner .brand-mark{flex-basis:44px;width:44px;height:auto}
  .brand>span:last-child{min-width:0}
  .brand strong{font-size:clamp(20px,6vw,25px);white-space:nowrap}
  .brand small{font-size:8px;line-height:1.4;white-space:normal;overflow-wrap:normal;max-width:190px}
@@ -17,7 +17,7 @@
  .top-inner>span svg,.top-inner>a svg{flex-shrink:0}
  .hero-carousel .hero-content{min-width:0;overflow-wrap:break-word}
 }
-.product-card,.solution-card{border:2px solid #91b6d2;box-shadow:0 3px 12px #123e6410}
+.product-card,.solution-card,.service-card{border:2px solid #91b6d2;box-shadow:0 3px 12px #123e6410}
 .equipment-photo[src*="tapo-chime"],.equipment-photo[src*="tapo-doorbell"]{object-fit:contain;padding:12px;background:#fff}
 img.equipment-photo[src*="ezviz-intercom"]{object-fit:cover;object-position:center 73%;padding:0;background:#eaf2f8}
 .product-image:has(img[src*="tapo-"]){background:white}
