@@ -1,5 +1,32 @@
 /* Full-bleed photographs with individual crops and a soft reading scrim. */
+/* Scale the entire logo crop together; narrowing only its frame cuts the globe. */
+.brand-mark{flex:0 0 54px;width:54px;height:57px;transform:none;margin:0}
+@media(max-width:700px){
+ .header-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;min-width:0;height:auto}
+ .header-inner .brand{min-width:0;max-width:100%;gap:6px;flex-shrink:1}
+ .brand-mark{flex-basis:44px;width:44px;height:47px;margin:0;transform:none}
+ .brand-mark img{width:99px;left:-28px;top:-5px}
+ .brand>span:last-child{min-width:0}
+ .brand strong{font-size:clamp(20px,6vw,25px);white-space:nowrap}
+ .brand small{font-size:8px;line-height:1.4;white-space:normal;overflow-wrap:normal;max-width:190px}
+ .header-actions{margin:0;gap:0}
+ .header-actions .icon-button{min-width:36px;width:36px;padding:6px}
+ .header-search{grid-column:1/-1;width:100%;min-width:0;margin:0;max-width:100%}
+ .header-search-field{width:100%;min-width:0}
+ .top-inner>span{min-width:0;white-space:normal;line-height:1.5}
+ .top-inner>span svg,.top-inner>a svg{flex-shrink:0}
+ .hero-carousel .hero-content{min-width:0;overflow-wrap:break-word}
+}
 .product-card,.solution-card{border:2px solid #91b6d2;box-shadow:0 3px 12px #123e6410}
+.equipment-photo[src*="tapo-chime"],.equipment-photo[src*="tapo-doorbell"]{object-fit:contain;padding:12px;background:#fff}
+img.equipment-photo[src*="ezviz-intercom"]{object-fit:cover;object-position:center 73%;padding:0;background:#eaf2f8}
+.product-image:has(img[src*="tapo-"]){background:white}
+.product-card:has([data-product="13"]){border-color:#287bb5}
+.product-card:has([data-product="13"]) .product-badge{background:#126ca6;color:white}
+.device-category-art{min-height:220px;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#edf5fa;color:#164967;padding:28px;text-align:center}
+.device-category-art svg{width:68px;height:68px;stroke-width:1.4;color:#287bb5}
+.device-category-art strong{font-size:19px}.device-category-art small{font-size:13px;color:#526d80}
+.basket-art .device-category-art{min-height:0;padding:10px}.basket-art .device-category-art svg{width:36px;height:36px}.basket-art .device-category-art strong,.basket-art .device-category-art small{display:none}
 .product-card:hover,.product-card:focus-within,.solution-card:hover,.solution-card:focus-within{border-color:#287bb5;box-shadow:0 4px 16px #123e641c}
 .hero-carousel{height:690px;min-height:690px;background:#072b46}
 .hero-carousel .hero-image{left:0;right:auto;top:0;width:100%;max-width:none;height:100%;object-position:center 48%;object-fit:cover}
@@ -19,6 +46,7 @@
 .brand-logo.brand-ipcom img{width:100%;height:auto;max-width:230px;max-height:none;object-fit:contain}
 .product-image:has(img[src*="ezviz"]),.product-image:has(img[src*="access-point"]),.product-image:has(img[src*="gateway-router"]),.product-image:has(img[src*="mesh-system"]){background:white}
 img.equipment-photo[src*="ezviz"],img.equipment-photo[src*="access-point"],img.equipment-photo[src*="gateway-router"],img.equipment-photo[src*="mesh-system"]{object-fit:contain;padding:28px;background:white}
+img.equipment-photo[src*="ezviz-c6n-3k"]{padding:6px;object-fit:contain}
 @media(max-width:1050px) and (min-width:701px){.hero-carousel{height:750px;min-height:750px}.hero-carousel .slide-heading{font-size:38px}.hero-carousel .hero-content{padding-top:48px}.hero-carousel .hero-content>p{font-size:17px}}
 @media(max-width:700px){
  .hero-carousel{height:760px;min-height:760px}
