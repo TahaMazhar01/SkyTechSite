@@ -22,7 +22,7 @@
 img.equipment-photo[src*="ezviz-intercom"]{object-fit:cover;object-position:center 73%;padding:0;background:#eaf2f8}
 .product-image:has(img[src*="tapo-"]){background:white}
 .product-card:has([data-product="13"]){border-color:#287bb5}
-.product-card:has([data-product="13"]) .product-badge{background:#126ca6;color:white}
+.product-card:has([data-product="13"]) .product-badge{background:#fff;color:var(--navy)}
 .device-category-art{min-height:220px;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#edf5fa;color:#164967;padding:28px;text-align:center}
 .device-category-art svg{width:68px;height:68px;stroke-width:1.4;color:#287bb5}
 .device-category-art strong{font-size:19px}.device-category-art small{font-size:13px;color:#526d80}
@@ -62,3 +62,14 @@ img.equipment-photo[src*="ezviz-c6n-3k"]{padding:6px;object-fit:contain}
  .brand-logo.brand-ipcom{padding:8px}
 }
 @media(max-width:380px){.hero-carousel{height:830px;min-height:830px}.hero-carousel .slide-heading{font-size:33px}}
+/* Six original brand marks, with equal breathing room across screen sizes. */
+.brand-logo-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 32px}
+.brand-logo-row .brand-logo{height:120px;overflow:hidden}
+.brand-logo-row .brand-imou img{max-width:200px}
+.brand-logo-row .brand-ezviz img{max-width:240px}
+.brand-logo-row .brand-eufy img{width:150%;max-width:240px;max-height:none;flex-shrink:0}
+@media(max-width:700px){
+ .brand-logo-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px}
+ .brand-logo-row .brand-logo{height:105px}
+ .brand-logo-row .brand-ipcom{grid-column:auto;width:100%;justify-self:stretch}
+}
