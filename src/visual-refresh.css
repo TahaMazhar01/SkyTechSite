@@ -73,3 +73,21 @@ img.equipment-photo[src*="ezviz-c6n-3k"]{padding:6px;object-fit:contain}
  .brand-logo-row .brand-logo{height:105px}
  .brand-logo-row .brand-ipcom{grid-column:auto;width:100%;justify-self:stretch}
 }
+/* Keep summaries compact and align the reading rhythm across each card row. */
+.product-body h3{min-height:2.8em;line-height:1.4;margin-bottom:12px}
+.product-body>p{min-height:3.5em;line-height:1.75;margin-bottom:24px}
+.service-body h3{min-height:2.8em;line-height:1.4;margin-bottom:14px}
+.service-body>p{min-height:5.4em;line-height:1.8;margin-bottom:22px}
+.service-body ul{display:grid;grid-template-rows:repeat(5,minmax(2.8em,auto));gap:10px;margin-bottom:26px}
+.service-body li{margin:0;align-items:flex-start;line-height:1.6}
+.service-body>.text-link{padding-top:8px}
+@media(max-width:540px){
+ .product-body h3,.product-body>p,.service-body h3,.service-body>p{min-height:0}
+ .service-body ul{grid-template-rows:none;gap:16px}
+}
+/* Let slide content determine banner height instead of reserving empty space. */
+.hero.hero-carousel{height:auto;min-height:0}
+.hero-carousel .hero-slides{position:relative;inset:auto;display:grid}
+.hero-carousel .hero-slide{position:relative;inset:auto;grid-area:1/1;min-width:0}
+.hero-carousel .hero-content{padding-block:52px 90px}
+@media(max-width:700px){.hero-carousel .hero-content{padding-block:36px 56px}}
