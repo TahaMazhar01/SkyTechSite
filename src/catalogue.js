@@ -1,7 +1,8 @@
 export const photoMap = {
  doorbell: ['tapo-chime', 'TP-Link Tapo H100 smart hub with chime'],
  intercom: ['ezviz-intercom', 'EZVIZ HP7 video intercom with indoor monitor and outdoor door station'],
- 'video-doorbell': ['tapo-doorbell.png', 'TP-Link Tapo D230 video doorbell camera'],
+ 'video-doorbell': ['eufy-e340', 'eufy Security Video Doorbell E340 with chime and dual cameras'],
+ solar: ['imou-solar', 'Imou Cell PT 3MP outdoor security camera with 3W solar panel'],
  wifi: ['access-point', 'TP-Link EAP225 ceiling-mount wireless access point'],
  router: ['gateway-router', 'TP-Link Archer AX55 wireless router'],
  mesh: ['mesh-system', 'TP-Link Deco X20 mesh Wi-Fi system'],
@@ -12,7 +13,7 @@ export const photoMap = {
  'service-camera': ['service-security', 'Smart security cameras and sensors'],
  'service-router': ['service-smart', 'Using a smart home control panel'],
  'service-switch': ['service-cabling', 'Structured cabling connected to network equipment'],
- camera: ['outdoor-camera', 'Wall-mounted outdoor security camera'],
+ camera: ['eufy-outdoor', 'eufy outdoor security camera'],
  indoor: ['indoor-camera', 'Compact white indoor security camera'],
  switch: ['network-switch', 'Ethernet connections on a network switch'],
  cable: ['ethernet-cabling', 'Ethernet patch cables connected to network equipment'],
@@ -24,7 +25,7 @@ export const photoMap = {
 export const products = [
  {id:1,type:'wifi',category:'Wi-Fi & networking',brand:'WIRELESS COVERAGE',name:'Wireless access points',desc:'Extend coverage across rooms and workspaces.',badge:'Wi-Fi',details:['Indoor coverage planning','Ceiling or wall mounting options','Configuration for your existing network']},
  {id:13,type:'camera',category:'Outdoor cameras',brand:'OUTDOOR SECURITY',name:'Outdoor CCTV cameras',desc:'Protect entrances, driveways, and perimeter areas.',badge:'Outdoor cameras',details:['Choose a model rated for the installation environment','Plan camera coverage and recording','Mobile viewing configuration for compatible systems']},
- {id:2,type:'ezviz',category:'CCTV & security',brand:'EZVIZ',name:'EZVIZ C6N G1-3K Camera',desc:'5MP indoor Wi-Fi camera for home and baby monitoring, with a call button, human detection, color night vision, and auto-zoom tracking.',badge:'3K · 5MP indoor camera',details:['Call button for easy communication','Indoor Wi-Fi surveillance and baby monitoring','5MP / 3K imaging','2.4GHz Wi-Fi connectivity','Human detection','Color night vision','Auto-zoom tracking','Supports storage up to 512GB']},
+ {id:2,type:'ezviz',category:'CCTV & security',brand:'EZVIZ',name:'EZVIZ C6N G1-3K Camera',desc:'5MP indoor Wi-Fi camera for home and baby monitoring, with a call button, human detection, color night vision, and auto-zoom tracking.',badge:'Indoor camera',details:['Call button for easy communication','Indoor Wi-Fi surveillance and baby monitoring','5MP / 3K imaging','2.4GHz Wi-Fi connectivity','Human detection','Color night vision','Auto-zoom tracking','Supports storage up to 512GB']},
  {id:3,type:'router',category:'Wi-Fi & networking',brand:'NETWORK GATEWAYS',name:'Wireless gateway routers',desc:'Bring your internet connection and devices together.',badge:'Networking',details:['Check compatibility with your connection','Wi-Fi and network configuration','Device connectivity and handover support']},
  {id:4,type:'switch',category:'Cabling & accessories',brand:'NETWORK ESSENTIALS',name:'Gigabit network switches',desc:'Connect computers, access points, and other equipment.',badge:'Wired networking',details:['Port count matched to your setup','Managed and unmanaged options','Rack or desktop installation planning']},
  {id:5,type:'mesh',category:'Wi-Fi & networking',brand:'WHOLE-HOME CONNECTIVITY',name:'Mesh Wi-Fi systems',desc:'Coordinated wireless coverage for multi-room spaces.',badge:'Home Wi-Fi',details:['Node placement based on your property','Wired backhaul options where suitable','Wi-Fi setup and device reconnection']},
@@ -37,7 +38,8 @@ export const products = [
  {id:12,type:'control',category:'Smart home',brand:'HOME AUTOMATION',name:'Smart home controls',desc:'Bring compatible connected devices into one routine.',badge:'Automation',details:['Compatibility review before selection','Control and connectivity planning','Setup walkthrough for your household']},
  {id:14,type:'doorbell',category:'Smart devices',brand:'ENTRY SOLUTIONS',name:'Doorbells & chimes',desc:'A clear welcome at your front door, with a setup that fits your home.',badge:'Doorbells',details:['Wired and wireless options to discuss','Check power and chime compatibility','Mounting and setup guidance']},
  {id:15,type:'intercom',category:'Smart devices',brand:'DOOR COMMUNICATION',name:'Video intercom systems',desc:'See and speak with visitors from a compatible indoor station.',badge:'Intercom',details:['Indoor monitor and entrance station planning','Audio and video options matched to your property','Door-release integration subject to compatibility']},
- {id:16,type:'video-doorbell',category:'Smart devices',brand:'SMART ENTRY',name:'Wi-Fi doorbell cameras',desc:'Check your entrance and speak with visitors from your phone.',badge:'Wi-Fi doorbell',details:['Wi-Fi coverage assessment at the entrance','Power, chime, and recording compatibility checks','App setup and visitor notification guidance']}
+ {id:16,type:'video-doorbell',category:'Smart devices',brand:'EUFY SECURITY',name:'eufy Video Doorbell E340 with Chime',desc:'Battery-powered Wi-Fi video doorbell with dual cameras, Delivery Guard, 2K Full HD, and color night vision.',badge:'Wi-Fi doorbell cameras',details:['Battery-powered E340 with chime','Dual cameras with Delivery Guard','2K Full HD video','Color night vision','HomeBase S380 compatible','No monthly fee']},
+ {id:17,type:'solar',category:'Outdoor cameras',brand:'IMOU',name:'Imou Cell PT 3MP Solar Camera',desc:'Wireless outdoor surveillance camera for home security, supplied with a new 3W solar panel.',badge:'Solar cameras',details:['Cell PT 3MP security camera for home','Wireless outdoor surveillance','Dome surveillance camera','Solar-powered setup with new 3W solar panel']}
 ];
 export const faqs = [
  ['Can you help me choose equipment?', 'Yes. Share your property type, the rooms or areas you want to cover, your existing equipment, and the problem you want to solve. SKY TECH can discuss suitable options before preparing a quote.'],

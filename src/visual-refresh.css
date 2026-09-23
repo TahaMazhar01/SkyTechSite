@@ -27,7 +27,8 @@ img.equipment-photo[src*="ezviz-intercom"]{object-fit:cover;object-position:cent
 .device-category-art svg{width:68px;height:68px;stroke-width:1.4;color:#287bb5}
 .device-category-art strong{font-size:19px}.device-category-art small{font-size:13px;color:#526d80}
 .basket-art .device-category-art{min-height:0;padding:10px}.basket-art .device-category-art svg{width:36px;height:36px}.basket-art .device-category-art strong,.basket-art .device-category-art small{display:none}
-.product-card:hover,.product-card:focus-within,.solution-card:hover,.solution-card:focus-within{border-color:#287bb5;box-shadow:0 4px 16px #123e641c}
+.product-card:hover,.product-card:focus-within,.solution-card:hover,.solution-card:focus-within,.service-card:hover,.service-card:focus-within{border-color:#287bb5;box-shadow:0 4px 16px #123e641c}
+img.equipment-photo[src*="eufy-"],img.equipment-photo[src*="imou-solar"]{object-fit:contain;padding:12px;background:#fff}
 .hero-carousel{height:690px;min-height:690px;background:#072b46}
 .hero-carousel .hero-image{left:0;right:auto;top:0;width:100%;max-width:none;height:100%;object-position:center 48%;object-fit:cover}
 .hero-carousel .hero-slide:nth-child(2) .hero-image{width:125%;object-position:center 53%}
