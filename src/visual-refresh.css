@@ -91,3 +91,4 @@ img.equipment-photo[src*="ezviz-c6n-3k"]{padding:6px;object-fit:contain}
 .hero-carousel .hero-slide{position:relative;inset:auto;grid-area:1/1;min-width:0}
 .hero-carousel .hero-content{padding-block:52px 90px}
 @media(max-width:700px){.hero-carousel .hero-content{padding-block:36px 56px}}
+img.equipment-photo[src*="ruijie-router-"]{object-fit:contain;padding:12px;background:#fff}
