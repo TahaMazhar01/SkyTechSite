@@ -1,4 +1,8 @@
 export const photoMap = {
+ 'hikvision-colorvu': ['hikvision-colorvu', 'Hikvision ColorVu camera'],
+ 'hikvision-outdoor': ['hikvision-outdoor', 'Hikvision outdoor camera'],
+ 'hikvision-hybrid': ['hikvision-hybrid', 'Hikvision hybrid light camera'],
+ 'hikvision-dome': ['hikvision-outdoor', 'Representative Hikvision dome camera'],
  doorbell: ['tapo-chime', 'TP-Link Tapo H100 smart hub with chime'],
  intercom: ['ezviz-intercom', 'EZVIZ HP7 video intercom with indoor monitor and outdoor door station'],
  'video-doorbell': ['eufy-e340', 'eufy Security Video Doorbell E340 with chime and dual cameras'],
@@ -24,6 +28,10 @@ export const photoMap = {
  office: ['office', 'Bright contemporary office workspace']
 };
 export const products = [
+ {id:19,type:'hikvision-colorvu',category:'CCTV & security',brand:'Hikvision',name:'Hikvision ColorVu Camera',desc:'Plan clear security coverage with a ColorVu camera.',badge:'ColorVu Camera',details:['Hikvision ColorVu camera range','Camera placement and recording setup','Exact model and specifications confirmed with your quote']},
+ {id:20,type:'hikvision-outdoor',category:'Outdoor cameras',brand:'Hikvision',name:'Hikvision Outdoor Camera',desc:'Monitor entrances and outdoor areas around your property.',badge:'Outdoor Camera',details:['Outdoor security camera selection','Coverage and mounting assessment','Exact model and weather rating confirmed with your quote']},
+ {id:21,type:'hikvision-hybrid',category:'CCTV & security',brand:'Hikvision',name:'Hikvision Hybrid Light Camera',desc:'Explore hybrid light camera options for your security setup.',badge:'Hybrid Light Camera',details:['Hikvision hybrid light camera range','Lighting and recording configuration','Exact model and specifications confirmed with your quote']},
+ {id:22,type:'hikvision-dome',category:'CCTV & security',brand:'Hikvision',name:'Hikvision Dome Camera',desc:'Dome-style surveillance for your home or business.',badge:'Dome Camera',details:['Hikvision dome camera selection','Mounting and coverage planning','Representative image; exact model confirmed with your quote']},
  {id:1,type:'wifi',category:'Wi-Fi & networking',brand:'WIRELESS COVERAGE',name:'Wireless access points',desc:'Extend coverage across rooms and workspaces.',badge:'Wi-Fi',details:['Indoor coverage planning','Ceiling or wall mounting options','Configuration for your existing network']},
  {id:13,type:'camera',category:'Outdoor cameras',brand:'OUTDOOR SECURITY',name:'Outdoor CCTV cameras',desc:'Protect entrances, driveways, and perimeter areas.',badge:'Outdoor cameras',details:['Choose a model rated for the installation environment','Plan camera coverage and recording','Mobile viewing configuration for compatible systems']},
  {id:2,type:'ezviz',category:'CCTV & security',brand:'EZVIZ',name:'EZVIZ C6N G1-3K Camera',summary:'3K indoor monitoring with smart tracking and a call button.',desc:'5MP indoor Wi-Fi camera for home and baby monitoring, with a call button, human detection, color night vision, and auto-zoom tracking.',badge:'Indoor camera',details:['Call button for easy communication','Indoor Wi-Fi surveillance and baby monitoring','5MP / 3K imaging','2.4GHz Wi-Fi connectivity','Human detection','Color night vision','Auto-zoom tracking','Supports storage up to 512GB']},
