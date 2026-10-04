@@ -2,7 +2,7 @@ export const photoMap = {
  'hikvision-colorvu': ['hikvision-colorvu', 'Hikvision ColorVu camera'],
  'hikvision-outdoor': ['hikvision-outdoor', 'Hikvision outdoor camera'],
  'hikvision-hybrid': ['hikvision-hybrid', 'Hikvision hybrid light camera'],
- 'hikvision-dome': ['hikvision-outdoor', 'Representative Hikvision dome camera'],
+ 'hikvision-dome': ['hikvision-dome', 'Hikvision dome camera'],
  doorbell: ['tapo-chime', 'TP-Link Tapo H100 smart hub with chime'],
  intercom: ['ezviz-intercom', 'EZVIZ HP7 video intercom with indoor monitor and outdoor door station'],
  'video-doorbell': ['eufy-e340', 'eufy Security Video Doorbell E340 with chime and dual cameras'],
