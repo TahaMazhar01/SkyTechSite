@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://www.skytechservices.store/sitemap.xml
 Sitemap: https://skytechservices.store/sitemap.xml
